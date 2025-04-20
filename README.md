@@ -178,3 +178,27 @@ This project is provided under the MIT License. See the `LICENSE` file for detai
 - Inspired by quadcopter control and simulation studies.
 
 For issues or contributions, please open an issue or submit a pull request on the repository (if hosted).
+
+
+## results
+position response
+![image](https://github.com/user-attachments/assets/2e675b9b-4510-4849-b142-e183550cb622)
+
+roll response:
+![image](https://github.com/user-attachments/assets/f7cf4b0c-4e99-40d5-a8fb-3b22f75e1be6)
+
+pitch response:
+![image](https://github.com/user-attachments/assets/fb5c6317-da0a-4977-9e13-b565199bfcc8)
+
+yaw response:
+![image](https://github.com/user-attachments/assets/14b49f8d-4506-481f-8123-1bfcedb7ca1a)
+
+3Dposition:
+![image](https://github.com/user-attachments/assets/0c0546be-3588-476d-a092-b265be5502ab)
+
+
+
+
+
+
+
