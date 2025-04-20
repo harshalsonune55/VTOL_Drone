@@ -2,10 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Drone parameters
-m = 2.0  # Mass of the drone (kg)
-g = 9.81  # Gravitational acceleration (m/s^2)
-k_t = 1e-6  # Thrust coefficient (N/(rad/s)^2)
-k_q = 1e-8  # Torque coefficient (Nm/(rad/s)^2)
+m = 2.0  
+g = 9.81  
+k_t = 1e-6  
+k_q = 1e-8  
 l = 0.25  # Arm length (m)
 n_motors = 4  # Number of motors
 I_xx = 0.02  # Moment of inertia about x (kg·m^2)
@@ -37,21 +37,21 @@ setpoint_z = 15.0  # Desired height (m)
 setpoint_psi = 0.0  # Desired yaw (rad)
 
 # Initialize arrays
-x = np.zeros(len(t))  # X position (m)
-y = np.zeros(len(t))  # Y position (m)
-z = np.zeros(len(t))  # Height (m)
-x_dot = np.zeros(len(t))  # X velocity (m/s)
-y_dot = np.zeros(len(t))  # Y velocity (m/s)
-z_dot = np.zeros(len(t))  # Vertical velocity (m/s)
-phi = np.zeros(len(t))  # Roll angle (rad)
-theta = np.zeros(len(t))  # Pitch angle (rad)
-psi = np.zeros(len(t))  # Yaw angle (rad)
-p = np.zeros(len(t))  # Roll rate (rad/s)
-q = np.zeros(len(t))  # Pitch rate (rad/s)
-r = np.zeros(len(t))  # Yaw rate (rad/s)
-omega = np.zeros(len(t))  # Average motor angular velocity (rad/s)
-alpha = np.zeros(len(t))  # Angular acceleration (rad/s^2)
-phi_error = np.zeros(len(t))  # Roll error (rad)
+x = np.zeros(len(t))  
+y = np.zeros(len(t))  
+z = np.zeros(len(t))  
+x_dot = np.zeros(len(t)) 
+y_dot = np.zeros(len(t))  
+z_dot = np.zeros(len(t))  
+phi = np.zeros(len(t))  
+theta = np.zeros(len(t))  
+psi = np.zeros(len(t))  
+p = np.zeros(len(t)) 
+q = np.zeros(len(t)) 
+r = np.zeros(len(t)) 
+omega = np.zeros(len(t))  
+alpha = np.zeros(len(t))  
+phi_error = np.zeros(len(t))  
 
 # Initialize control variables
 error_integral_x = 0.0
