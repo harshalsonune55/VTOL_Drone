@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 # Drone parameters
 m = 2.0  
@@ -307,3 +308,16 @@ ax8.legend()
 
 plt.tight_layout()
 plt.savefig('drone_response.png')
+
+
+fig = plt.figure(figsize=(20, 32))
+# 3D Position Plot
+ax1 = fig.add_subplot(611, projection='3d')
+ax1.plot(x, y, z, label='Drone Trajectory', color='b')
+ax1.scatter([setpoint_x], [setpoint_y], [setpoint_z], color='r', s=100, label='Setpoint')
+ax1.set_title('Drone 3D Position Trajectory')
+ax1.set_xlabel('X Position (m)')
+ax1.set_ylabel('Y Position (m)')
+ax1.set_zlabel('Z Position (m)')
+ax1.grid(True)
+ax1.legend()
